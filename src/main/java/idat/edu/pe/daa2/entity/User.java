@@ -25,17 +25,13 @@ public class User implements Serializable{
 	private String password;
 	
 	@Column(name = "first_name", nullable = false, length = 20)
-	private String firtName;
+	private String firstName;
 	
 	@Column(name = "last_name", nullable = false, length = 20)
 	private String lastName;
 
 	public Integer getId() {
 		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
 	}
 
 	public String getEmail() {
@@ -54,12 +50,12 @@ public class User implements Serializable{
 		this.password = password;
 	}
 
-	public String getFirtName() {
-		return firtName;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setFirtName(String firtName) {
-		this.firtName = firtName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
@@ -69,6 +65,12 @@ public class User implements Serializable{
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	
 
 	
 	

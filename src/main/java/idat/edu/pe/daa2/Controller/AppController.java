@@ -1,5 +1,7 @@
 package idat.edu.pe.daa2.Controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -32,5 +34,13 @@ public class AppController {
 		userRepo.save(user);
 		
 		return "register_success";
+	}
+	
+	@GetMapping("/users")
+	public String showList(Model model) {
+//		model.addAttribute("user", new User());
+		List<User> listaUsuarios = userRepo.findAll();
+		model.addAttribute("listaCategorias", listaUsuarios);
+		return "users";
 	}
 }

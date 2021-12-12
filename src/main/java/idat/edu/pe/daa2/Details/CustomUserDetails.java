@@ -1,4 +1,4 @@
-package idat.edu.pe.daa2.Service;
+package idat.edu.pe.daa2.Details;
 
 import java.util.Collection;
 
@@ -8,10 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import idat.edu.pe.daa2.entity.User;
 
 public class CustomUserDetails implements UserDetails{
-	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private User user;
 	
@@ -55,7 +52,6 @@ public class CustomUserDetails implements UserDetails{
 	}
 	
 	public String getFullName() {
-		return user.getFirtName() + " " + user.getLastName();
+		return user.getFirstName() + " " + user.getLastName();
 	}
-	
 }

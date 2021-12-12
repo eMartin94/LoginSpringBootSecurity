@@ -5,6 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import idat.edu.pe.daa2.Details.CustomUserDetails;
 import idat.edu.pe.daa2.entity.User;
 import idat.edu.pe.daa2.repository.UserRepositoty;
 

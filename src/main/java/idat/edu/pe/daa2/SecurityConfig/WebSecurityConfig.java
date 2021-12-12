@@ -1,6 +1,6 @@
 package idat.edu.pe.daa2.SecurityConfig;
 
-import javax.sql.DataSource;
+//import javax.sql.DataSource;
 
 //import javax.activation.DataSource;
 
@@ -21,8 +21,8 @@ import idat.edu.pe.daa2.Service.CustomUserDetailsService;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
-	@Autowired
-	private DataSource dataSourse;
+//	@Autowired
+//	private DataSource dataSourse;
 	
 	@Bean
 	public UserDetailsService userDetailsService() {
